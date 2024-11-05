@@ -67,16 +67,15 @@ label start:
     jump plolog_lah
 
 label plolog_lah:
-    scene Background: 
-        "#fafafa"
-"[prologlah_text[1]]" with dissolve
-"[prologlah_text[2]]" with dissolve
-"[prologlah_text[3]]" with dissolve
-"[prologlah_text[4]]" with dissolve
-"[prologlah_text[5]]" with dissolve
+    scene envi_mom
+    show larasati2 at left:
+        zoom 0.31 yalign 0.76
+    larasati "[text_prolog_larasati[0]]"
 
 label mainkan_bro:
-    "Mari kita main!!!"
+    larasati "[text_prolog_larasati[1]]"
+    hide larasati 
+    with dissolve
     image whole = "bulungmitos.jpg"
     play music "musike.mp3"
     scene hutan
